@@ -1,43 +1,27 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import Custombutton from './Custombutton'
-
-
-
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import Custombutton from './Custombutton';
 
 export const Navbar = () => {
   return (
     <header className='w-full absolute z-10'>
-      <nav className='max-w-[1440px] mx-auto
-      flex justify-between items-center sm:px-16 px-6 py-4'>
+      <nav className='max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4'>
         <Link href='/' className='flex justify-center items-center'> 
-                
-        <Image 
-        src='/logo.svg'
-        width={118} 
-        height={18}
-        className='object-contain'
-        alt='Car hub logo'
-
-        />
+          <Image 
+            src='/logo.svg'
+            width={118} 
+            height={18}
+            className='object-contain'
+            alt='Car hub logo'
+          />
         </Link>
         <Custombutton
-        title='Sign In'
-        btnType="button"
-        containerStyles='text-primary-blue rounded full 
-        bg-white min-w-[130px]'
+          title='Sign In'
+          btnType="button"
+          containerStyles='text-primary-blue rounded-full border border-primary-blue bg-white min-w-[130px]'
         />
-
-
-
-
-
-
-
       </nav>
-
     </header>
-   
-  )
-}
+  );
+};

@@ -16,7 +16,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className='flex flex-col sm:flex-row justify-between items-center gap-6 w-full sm:w-auto'>
+        <div className='flex flex-col sm:flex-row justify-between items-center gap-8 w-full sm:w-auto'>
           {footerLinks.map((link) => (
             <div key={link.title} className='flex flex-col items-start'>
               <h3 className='font-bold'>{link.title}</h3>
